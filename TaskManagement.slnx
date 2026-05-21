@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="TaskManagement.Api.UnitTests/TaskManagement.Api.UnitTests.csproj" Id="f6c7970c-c0f8-4f22-9e15-21fc6aa33682" />
+  <Project Path="TaskManagement.Api/TaskManagement.Api.csproj" />
+  <Project Path="TaskManagement.Application/TaskManagement.Application.csproj" />
+  <Project Path="TaskManagement.Common/TaskManagement.Common.csproj" Id="e90099c2-478f-4571-802a-28e8eebacf5e" />
+  <Project Path="TaskManagement.Domain/TaskManagement.Domain.csproj" Id="b1abb359-4985-4c9a-84fc-c059385c0bfc" />
+  <Project Path="TaskManagement.Infrastructure/TaskManagement.Infrastructure.csproj" Id="e371c023-1b5e-4456-972f-23d6f6a255f6" />
+</Solution>
