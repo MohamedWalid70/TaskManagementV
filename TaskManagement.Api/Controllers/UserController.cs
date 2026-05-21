@@ -2,10 +2,7 @@
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using TaskManagement.Api.Models.Auth;
 using TaskManagement.Api.Models.Users;
-using TaskManagement.Application.Features.Auth.Queries.Common;
-using TaskManagement.Application.Features.Auth.Queries.Login;
 using TaskManagement.Application.Features.Common;
 using TaskManagement.Application.Features.Users.Commands.CreateUser;
 using TaskManagement.Application.Features.Users.Commands.DeleteUser;
@@ -60,8 +57,8 @@ namespace TaskManagement.Api.Controllers
 
         [Authorize(Roles = "Admin,User")]
         [HttpGet("me")]
-        [ProducesResponseType(typeof(GenericResult<AuthQueryResponse>), StatusCodes.Status200OK)]
-        [ProducesResponseType(typeof(GenericResult), StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(typeof(GenericResult<GetCurrentUserProfileQueryResponse>), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<GenericResult<GetCurrentUserProfileQueryResponse>>> GetUserProfile()
         {
             var getCurrentUserProfileQuery = new GetCurrentUserProfileQuery();

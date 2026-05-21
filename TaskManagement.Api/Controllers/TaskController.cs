@@ -69,7 +69,6 @@ namespace TaskManagement.Api.Controllers
         [HttpPut("status")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(typeof(GenericResult), StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(typeof(GenericResult), StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult> UpdateTaskStatus([FromBody] UpdateTaskStatusCommandParam updateTaskStatusCommandParam)
         {
             var updateTaskStatusCommand = _mapper.Map<UpdateTaskStatusCommand>(updateTaskStatusCommandParam);
