@@ -30,7 +30,7 @@ A .NET Web API built with Clean Architecture, featuring user management, task tr
 
 ```bash
 git clone https://github.com/MohamedWalid70/TaskManagementV.git
-cd task-management-api
+cd TaskManagement.Api
 ```
 
 ### 2. Start Redis via Docker
