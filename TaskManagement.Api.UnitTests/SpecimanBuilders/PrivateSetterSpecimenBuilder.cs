@@ -18,10 +18,8 @@ namespace TaskManagement.Api.UnitTests.SpecimanBuilders
             if (request is not Type type || !_types.Contains(type))
                 return new NoSpecimen();
 
-            // ✅ create empty instance bypassing constructor entirely
             var instance = RuntimeHelpers.GetUninitializedObject(type);
 
-            // ✅ fill all private setter properties via reflection
             foreach (var prop in type.GetProperties(
                          BindingFlags.Instance | BindingFlags.Public))
             {
