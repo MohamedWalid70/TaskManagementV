@@ -1,4 +1,4 @@
-# Task Management API
+# Task Management
 
 A .NET Web API built with Clean Architecture, featuring user management, task tracking, background processing, and Redis caching.
 
