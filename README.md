@@ -48,13 +48,13 @@ docker ps
 ### 3. Apply Database Migrations
 
 ```bash
-dotnet ef database update --project src/Infrastructure --startup-project src/Api
+dotnet ef database update --project src/TaskManagement.Infrastructure --startup-project src/TaskManagement.Api
 ```
 
 ### 4. Run the Project
 
 ```bash
-dotnet run --project src/Api
+dotnet run --project src/TaskManagement.Api
 ```
 
 ---
